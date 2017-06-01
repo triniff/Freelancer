@@ -5,27 +5,32 @@
 
 header, #portfolio, #about, #contact {
 	text-align: center;
-	padding: 40px;
+	padding: 50px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 800;
 }
 
  /*Menu*/
  nav {
 	width: 100%;
-	height: 70px;
-	background-color: #2B3152;
+	padding: 20px;
+	background-color: #2c3e50;
 	color: #fff;
-	font-weight: 800;
+	font-weight: 700;
 	position: fixed;
-	top: 0;
  }
  nav h3{
  	float: left;
- 	margin-top: 25px;
+ 	margin-top: 10px;
  	margin-left: 100px;
+ 	font-size: 30px;
  }
 nav ul {
 	float: right;
-	margin-top: 25px;
+	margin-top: 20px;
 	margin-right: 50px;
 }
 nav ul li{
@@ -35,50 +40,108 @@ nav ul li a {
 	text-decoration: none;
 	padding: 15px;
 	color: #fff;
-	font-size: 13px;
-	font-weight: 800;
+	font-size: 16px;
+	font-weight: 700;
 }
 nav ul li a:hover{
-	background-color: grey;
+	color: #18bc9c;
 }
 /*HEADER*/
 header {
-	background-color: #69F0EF;
-	padding-top: 80px;
+	background-color:  #18bc9c;
+	padding-top: 150px;
 	padding-bottom: 50px;
 	color: #fff;
 	font-size: 20px;
 }
-/*About*/
-.text{
-	text-align: justify;
-	margin: 0 auto;
+
+/*Portfolio*/
+#portfolio{
+	margin: 60px 0px;
+	color: #2c3e50;
 }
 
+/*About*/
+#about{
+	background-color: #18bc9c;
+	color: #fff;
+	padding: 100px;
+}
+.text{
+	text-align: left;
+	padding: 0 100px;
+	font-size: 20px;
+}
+.btn-about {
+	background-color: #18bc9c;
+	padding: 15px 20px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-about:hover {
+	background-color: #fff;
+	color: #18bc9c;
+}
 
 /*Contact*/
+#contact{
+	color: #2c3e50;
+}
 .about-form{
 	text-align: center;
 }
 .about-form input {
-	width: 100%;
+	width: 70%;
 	border: none;
-	height: 60px;
-	border-top: 1px solid #BAACB2;
-	border-bottom: 1px solid #BAACB2;
+	height: 80px;
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-form input::placeholder{
 	font-size: 20px;
 }
 .btn-contact{
+	margin-left: 200px;
 	float: left;
+	background-color: #18bc9c;
+	padding: 15px;
+	border: none;
+	border-radius: 7px;
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-contact:hover{
+	background-color: #13947B;
 }
 
 /*Footer*/
 .first-footer{
-	background-color: #272C4A;
+	background-color: #2c3e50;
+	padding: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.first-footer h4{
+	margin-bottom: 25px;
+	font-size: 23px;
+}
+
+.first-footer a{
+	text-decoration: none;
+	color: #18bc9c;
+}
+.first-footer a:hover{
+	text-decoration: underline;
 }
 .second-footer{
-	background-color: #2B3152;
+	background-color: #233140;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
 }
