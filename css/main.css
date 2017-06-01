@@ -187,3 +187,7 @@ header h1{
 .scroll-menu .menu{
 	margin-top: 10px;
 }
+
+.portfolio-scroll{
+	background-color: grey;
+}
