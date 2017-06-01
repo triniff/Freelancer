@@ -86,3 +86,31 @@
  .text-uppercase{
  	text-transform: uppercase;
  }
+
+ /*DECORACION*/
+.line{
+ 	border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    position: relative;
+    margin: 0 auto;
+ }
+
+ .line i{
+ 	position: relative;
+    top: -18px;
+    width: 30px;
+    font-size: 30px;
+ }
+
+ .white i{
+ 	color: #fff;
+ 	background-color: #18bc9c;
+ 	width: 40px;
+ }
+  .blue i{
+ 	color: #2c3e50;
+ 	background-color: #fff;
+ 	width: 40px;
+ }
