@@ -14,10 +14,56 @@
      headerEl.classList.remove("scroll-menu");
    }
 
-   var portfolio = document.getElementById("portfolio");
+   var contact = document.getElementById("contact");		
+   var menuContact = document.getElementsByClassName("contact")[0];
+
+   var portfolio = document.getElementById("portfolio");		
    var menu = document.getElementsByClassName("portfolio")[0];
-   if(distanceY > shrinkOn){
-   		menu.classList.add("portfolio-scroll");
+
+   var about = document.getElementById("about");		
+   var menuAbout = document.getElementsByClassName("about")[0];
+
+   if(distanceY >= 600){
+   		menu.classList.add("menu-scroll-hover"); // cambiando el color a portfolio
+   } else if (distanceY < 600) {
+   		menu.classList.remove("menu-scroll-hover");
+
    }
+ 	if(distanceY >= 1700){
+   		menuAbout.classList.add("menu-scroll-hover");	// cambiando el color a about
+   		menu.classList.remove("menu-scroll-hover");
+
+ 	} else if(distanceY >= 2200 || distanceY <= 1700){
+   		menuAbout.classList.remove("menu-scroll-hover");
+
+ 	}
+
+ 	if(distanceY > 2200){
+   		menuContact.classList.add("menu-scroll-hover"); // cambiando el color de contact
+   		menuAbout.classList.remove("menu-scroll-hover");
+
+ 	}else if (distanceY >= 2400 || distanceY < 2200) {
+ 		menuContact.classList.remove("menu-scroll-hover");
+ 	}
  });
 
+//CREANDO GALERIA
+(function portfolio (){
+	var gallery = document.getElementById("gallery");
+	var portfolioInfo = Array.from(document.getElementsByClassName("portfolio-info"));
+	var imageGallery = document.getElementsByClassName("image-gallery")[0];
+	var close = document.getElementsByClassName("fa-times")[0];
+	var image;
+
+	portfolioInfo.forEach(function(pic){
+		pic.addEventListener("click", function(){
+			gallery.style.display = 'block';
+ 			
+ 			close.addEventListener("click", function(){
+ 				gallery.style.display = 'none';
+ 				
+  			})
+		})
+	})
+	
+})()
