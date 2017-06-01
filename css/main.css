@@ -3,8 +3,9 @@
  */
 
 
-header, #portfolio, #about {
+header, #portfolio, #about, #contact {
 	text-align: center;
+	padding: 40px;
 }
 
  /*Menu*/
@@ -37,11 +38,47 @@ nav ul li a {
 	font-size: 13px;
 	font-weight: 800;
 }
-
-/**/
+nav ul li a:hover{
+	background-color: grey;
+}
+/*HEADER*/
+header {
+	background-color: #69F0EF;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #fff;
+	font-size: 20px;
+}
+/*About*/
 .text{
 	text-align: justify;
 	margin: 0 auto;
 }
 
 
+/*Contact*/
+.about-form{
+	text-align: center;
+}
+.about-form input {
+	width: 100%;
+	border: none;
+	height: 60px;
+	border-top: 1px solid #BAACB2;
+	border-bottom: 1px solid #BAACB2;
+}
+
+.about-form input::placeholder{
+	font-size: 20px;
+}
+.btn-contact{
+	float: left;
+}
+
+/*Footer*/
+.first-footer{
+	background-color: #272C4A;
+}
+.second-footer{
+	background-color: #2B3152;
+}
