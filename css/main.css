@@ -175,3 +175,15 @@ header h1{
 	color: #18bc9c;
 	background-color: #fff;
 }
+
+
+/*SCROLL MENU*/
+.scroll-menu{
+	padding: 10px;
+}
+.scroll-menu h3{
+	font-size: 25px;
+}
+.scroll-menu .menu{
+	margin-top: 10px;
+}
