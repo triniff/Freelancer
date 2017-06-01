@@ -1,3 +1,51 @@
 /*
  * Estilos reutilizables
  */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row:before, .row:after{
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+
+/*Para cada clase que comienze con: "col-"*/
+[class*="col-"]{
+	min-height: 7px;
+	float: left;
+	padding: 12px;
+}
+
+.col-12{
+	/*(12/12)*100*/
+	width: 100%;
+}
+
+.col-4{
+	/*(4/12)*100*/
+	width: 33.333333%;
+}
+
+
+.img-responsive{
+	max-width: 100%;
+	width: 100%;
+}
+
+/*OTROS ESTILOS*/
+ .text-uppercase{
+ 	text-transform: uppercase;
+ }
