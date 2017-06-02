@@ -55,13 +55,19 @@
 	var portfolioInfo = Array.from(document.getElementsByClassName("portfolio-info"));
 	var imageGallery = document.getElementsByClassName("image-gallery")[0];
 	var close = document.getElementsByClassName("fa-times")[0];
+	var closeBtm = document.getElementById("button-bottom");
 	var image;
 
 	portfolioInfo.forEach(function(pic){
 		pic.addEventListener("click", function(){
 			gallery.style.display = 'block';
+			imageGallery.innerHTML = pic.innerHTML;
  			
  			close.addEventListener("click", function(){
+ 				gallery.style.display = 'none';
+ 				
+  			})
+  			closeBtm.addEventListener("click", function(){
  				gallery.style.display = 'none';
  				
   			})
@@ -70,3 +76,4 @@
 	})
 	
 })()
+
