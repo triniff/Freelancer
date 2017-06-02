@@ -47,6 +47,8 @@
  	}
  });
 
+
+
 //CREANDO GALERIA
 (function portfolio (){
 	var gallery = document.getElementById("gallery");
@@ -64,6 +66,7 @@
  				
   			})
 		})
+
 	})
 	
 })()
